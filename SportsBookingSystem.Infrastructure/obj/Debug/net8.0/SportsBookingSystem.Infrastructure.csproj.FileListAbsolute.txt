@@ -19,3 +19,4 @@ D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Infrastruct
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Infrastructure\obj\Debug\net8.0\ref\SportsBookingSystem.Infrastructure.dll
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Infrastructure\bin\Debug\net8.0\SportsBookingSystem.Infrastructure.runtimeconfig.json
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Infrastructure\obj\Debug\net8.0\SportsBookingSystem.Infrastructure.genruntimeconfig.cache
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Infrastructure\obj\Debug\net8.0\SportsBookingSystem.Infrastructure.sourcelink.json

@@ -15,10 +15,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\SportsBookingSystem.Application\SportsBookingSystem.Application.csproj" />
     <ProjectReference Include="..\SportsBookingSystem.Infrastructure\SportsBookingSystem.Infrastructure.csproj" />
     <ProjectReference Include="..\SportsBookingSystem.SharedKernel\SportsBookingSystem.SharedKernel.csproj" />

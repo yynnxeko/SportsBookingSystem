@@ -1,0 +1,17 @@
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\SportsBookingSystem.Application.deps.json
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\SportsBookingSystem.Application.dll
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\SportsBookingSystem.Application.pdb
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\SportsBookingSystem.Core.dll
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\SportsBookingSystem.SharedKernel.dll
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\SportsBookingSystem.Core.pdb
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\SportsBookingSystem.SharedKernel.pdb
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.csproj.AssemblyReference.cache
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.AssemblyInfoInputs.cache
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.AssemblyInfo.cs
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.csproj.CoreCompileInputs.cache
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBo.581E044D.Up2Date
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.dll
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\refint\SportsBookingSystem.Application.dll
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.pdb
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\ref\SportsBookingSystem.Application.dll

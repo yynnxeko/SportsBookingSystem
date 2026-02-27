@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="SportsBookingSystem.Application/SportsBookingSystem.Application.csproj" />
+  <Project Path="SportsBookingSystem.Core/SportsBookingSystem.Core.csproj" />
+  <Project Path="SportsBookingSystem.Infrastructure/SportsBookingSystem.Infrastructure.csproj" />
+  <Project Path="SportsBookingSystem.SharedKernel/SportsBookingSystem.SharedKernel.csproj" />
+  <Project Path="SportsBookingSystem.WebAPI/SportsBookingSystem.WebAPI.csproj" />
+</Solution>

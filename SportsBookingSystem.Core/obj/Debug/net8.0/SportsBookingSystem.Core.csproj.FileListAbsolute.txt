@@ -1,0 +1,15 @@
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\bin\Debug\net8.0\SportsBookingSystem.Core.deps.json
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\bin\Debug\net8.0\SportsBookingSystem.Core.dll
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\bin\Debug\net8.0\SportsBookingSystem.Core.pdb
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\bin\Debug\net8.0\SportsBookingSystem.SharedKernel.dll
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\bin\Debug\net8.0\SportsBookingSystem.SharedKernel.pdb
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.csproj.AssemblyReference.cache
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.AssemblyInfoInputs.cache
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.AssemblyInfo.cs
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.csproj.CoreCompileInputs.cache
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBo.3A3587D1.Up2Date
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.dll
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\refint\SportsBookingSystem.Core.dll
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.pdb
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\ref\SportsBookingSystem.Core.dll

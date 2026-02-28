@@ -102,6 +102,39 @@
           }
         }
       },
+      "Microsoft.AspNetCore.Http.Abstractions/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Features": "2.1.1",
+          "System.Text.Encodings.Web": "4.5.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.AspNetCore.Http.Features/2.1.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
         "type": "package",
         "compile": {
@@ -1542,7 +1575,8 @@
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
           "BCrypt.Net-Next": "4.1.0",
           "SportsBookingSystem.Core": "1.0.0",
-          "SportsBookingSystem.SharedKernel": "1.0.0"
+          "SportsBookingSystem.SharedKernel": "1.0.0",
+          "VNPAY.NET": "8.5.0"
         },
         "compile": {
           "bin/placeholder/SportsBookingSystem.Application.dll": {}
@@ -1573,6 +1607,19 @@
         },
         "runtime": {
           "bin/placeholder/SportsBookingSystem.SharedKernel.dll": {}
+        }
+      },
+      "VNPAY.NET/8.5.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Http.Abstractions": "2.1.1"
+        },
+        "compile": {
+          "bin/placeholder/VNPAY.NET.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/VNPAY.NET.dll": {}
         }
       }
     }
@@ -1690,6 +1737,32 @@
         "lib/netstandard2.0/Humanizer.dll",
         "lib/netstandard2.0/Humanizer.xml",
         "logo.png"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Abstractions/2.1.1": {
+      "sha512": "kQUEVOU4loc8CPSb2WoHFTESqwIa8Ik7ysCBfTwzHAd0moWovc9JQLmhDIHlYLjHbyexqZAlkq/FPRUZqokebw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.abstractions/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Abstractions.xml",
+        "microsoft.aspnetcore.http.abstractions.2.1.1.nupkg.sha512",
+        "microsoft.aspnetcore.http.abstractions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Http.Features/2.1.1": {
+      "sha512": "VklZ7hWgSvHBcDtwYYkdMdI/adlf7ebxTZ9kdzAhX+gUs5jSHE9mZlTamdgf9miSsxc1QjNazHXTDJdVPZKKTw==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.http.features/2.1.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.dll",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Http.Features.xml",
+        "microsoft.aspnetcore.http.features.2.1.1.nupkg.sha512",
+        "microsoft.aspnetcore.http.features.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/6.0.0": {
@@ -4150,6 +4223,11 @@
       "type": "project",
       "path": "../SportsBookingSystem.SharedKernel/SportsBookingSystem.SharedKernel.csproj",
       "msbuildProject": "../SportsBookingSystem.SharedKernel/SportsBookingSystem.SharedKernel.csproj"
+    },
+    "VNPAY.NET/8.5.0": {
+      "type": "project",
+      "path": "../VNPAY.NET/VNPAY.NET.csproj",
+      "msbuildProject": "../VNPAY.NET/VNPAY.NET.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -4163,23 +4241,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\ASUS\\.nuget\\packages\\": {},
+    "C:\\Users\\BINH\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\SportsBookingSystem.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\SportsBookingSystem.Infrastructure.csproj",
       "projectName": "SportsBookingSystem.Infrastructure",
-      "projectPath": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\SportsBookingSystem.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-      "outputPath": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\SportsBookingSystem.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\BINH\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\BINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4188,18 +4266,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj": {
-              "projectPath": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj"
+            "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj": {
+              "projectPath": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj"
             },
-            "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj": {
-              "projectPath": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj"
+            "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj": {
+              "projectPath": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj"
             }
           }
         }
@@ -4214,7 +4291,7 @@
         "auditLevel": "low",
         "auditMode": "direct"
       },
-      "SdkAnalysisLevel": "10.0.100"
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net8.0": {
@@ -4257,7 +4334,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.309/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

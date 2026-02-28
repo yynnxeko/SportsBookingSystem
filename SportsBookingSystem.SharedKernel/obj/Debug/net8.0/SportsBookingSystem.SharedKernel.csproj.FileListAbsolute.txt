@@ -9,3 +9,15 @@ D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.SharedKerne
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\refint\SportsBookingSystem.SharedKernel.dll
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\SportsBookingSystem.SharedKernel.pdb
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\ref\SportsBookingSystem.SharedKernel.dll
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.SharedKernel\bin\Debug\net8.0\SportsBookingSystem.SharedKernel.deps.json
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.SharedKernel\bin\Debug\net8.0\SportsBookingSystem.SharedKernel.dll
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.SharedKernel\bin\Debug\net8.0\SportsBookingSystem.SharedKernel.pdb
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\SportsBookingSystem.SharedKernel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\SportsBookingSystem.SharedKernel.AssemblyInfoInputs.cache
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\SportsBookingSystem.SharedKernel.AssemblyInfo.cs
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\SportsBookingSystem.SharedKernel.csproj.CoreCompileInputs.cache
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\SportsBookingSystem.SharedKernel.sourcelink.json
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\SportsBookingSystem.SharedKernel.dll
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\refint\SportsBookingSystem.SharedKernel.dll
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\SportsBookingSystem.SharedKernel.pdb
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\ref\SportsBookingSystem.SharedKernel.dll

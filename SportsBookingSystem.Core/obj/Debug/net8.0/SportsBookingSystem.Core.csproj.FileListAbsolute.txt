@@ -13,3 +13,19 @@ D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\De
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\refint\SportsBookingSystem.Core.dll
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.pdb
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\ref\SportsBookingSystem.Core.dll
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\bin\Debug\net8.0\SportsBookingSystem.Core.deps.json
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\bin\Debug\net8.0\SportsBookingSystem.Core.dll
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\bin\Debug\net8.0\SportsBookingSystem.Core.pdb
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\bin\Debug\net8.0\SportsBookingSystem.SharedKernel.dll
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\bin\Debug\net8.0\SportsBookingSystem.SharedKernel.pdb
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.csproj.AssemblyReference.cache
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.AssemblyInfoInputs.cache
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.AssemblyInfo.cs
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.csproj.CoreCompileInputs.cache
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.sourcelink.json
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBo.3A3587D1.Up2Date
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.dll
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\refint\SportsBookingSystem.Core.dll
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.pdb
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\ref\SportsBookingSystem.Core.dll

@@ -27,20 +27,17 @@ namespace SportsBookingSystem.Application.Services
 
         public async Task<CourtPriceRuleDto> CreateAsync(CourtPriceRuleCreateDto dto)
         {
-            // Validate StartTime < EndTime
             if (dto.StartTime >= dto.EndTime)
             {
                 throw new ArgumentException("StartTime must be before EndTime.");
             }
 
-            // Check if Court exists
             var court = await _courtRepository.GetByIdAsync(dto.CourtId);
             if (court == null)
             {
                 throw new ArgumentException($"Court with ID {dto.CourtId} not found.");
             }
 
-            // Check for overlaps
             bool isOverlap = await _ruleRepository.IsOverlapAsync(dto.CourtId, dto.DayOfWeek, dto.StartTime, dto.EndTime);
             if (isOverlap)
             {
@@ -86,7 +83,6 @@ namespace SportsBookingSystem.Application.Services
 
         public async Task<CourtPriceRuleDto> UpdateAsync(Guid id, CourtPriceRuleUpdateDto dto)
         {
-            // Validate StartTime < EndTime
             if (dto.StartTime >= dto.EndTime)
             {
                 throw new ArgumentException("StartTime must be before EndTime.");
@@ -98,14 +94,12 @@ namespace SportsBookingSystem.Application.Services
                 throw new KeyNotFoundException($"CourtPriceRule with ID {id} not found.");
             }
 
-            // Check for overlaps (excluding current rule)
             bool isOverlap = await _ruleRepository.IsOverlapAsync(existingRule.CourtId, dto.DayOfWeek, dto.StartTime, dto.EndTime, id);
             if (isOverlap)
             {
                 throw new ArgumentException("The specified time range overlaps with an existing pricing rule for this court on this day.");
             }
 
-            // Update properties
             existingRule.DayOfWeek = dto.DayOfWeek;
             existingRule.StartTime = dto.StartTime;
             existingRule.EndTime = dto.EndTime;

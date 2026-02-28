@@ -156,3 +156,4 @@ D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.WebAPI\obj\
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.WebAPI\bin\Debug\net8.0\AutoMapper.dll
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.WebAPI\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.WebAPI\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.WebAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

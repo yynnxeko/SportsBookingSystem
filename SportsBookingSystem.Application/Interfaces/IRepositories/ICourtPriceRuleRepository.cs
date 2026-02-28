@@ -14,10 +14,7 @@ namespace SportsBookingSystem.Application.Interfaces.IRepositories
         Task<CourtPriceRule> UpdateAsync(CourtPriceRule rule);
         Task<bool> DeleteAsync(Guid id);
         
-        // For validation: check if rule overlaps with existing rules
         Task<bool> IsOverlapAsync(Guid courtId, int dayOfWeek, TimeOnly startTime, TimeOnly endTime, Guid? excludeRuleId = null);
-
-        // Find the matching price rule for a specific court, day, and time slot
         Task<CourtPriceRule?> FindMatchingRuleAsync(Guid courtId, int dayOfWeek, TimeOnly slotStartTime, TimeOnly slotEndTime);
     }
 }

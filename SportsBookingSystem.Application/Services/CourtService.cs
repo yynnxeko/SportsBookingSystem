@@ -5,8 +5,6 @@ using SportsBookingSystem.Application.Interfaces.IService;
 using SportsBookingSystem.Core.Models;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 using SportsBookingSystem.Application.DTOs.TimeSlotDtos;
 
@@ -109,13 +107,12 @@ namespace SportsBookingSystem.Application.Services
             var timeSlots = await _timeSlotRepository.GetAllAsync();
             var timeSlotDtos = _mapper.Map<List<TimeSlotDto>>(timeSlots);
 
-            var courtIds = sportCourts.ConvertAll(c => c.Id);
-            var bookedSlotsByCourt = await _courtRepository.GetBookedTimeSlotIdsByCourtAsync(courtIds, date);
-
             var result = new List<CourtAvailabilityDto>();
 
             foreach (var court in sportCourts)
             {
+                var bookedSlotIds = await _courtRepository.GetBookedTimeSlotIdsAsync(court.Id, date);
+
                 var courtAvailability = new CourtAvailabilityDto
                 {
                     CourtId = court.Id,
@@ -123,13 +120,9 @@ namespace SportsBookingSystem.Application.Services
                     Slots = new List<SlotAvailabilityDto>()
                 };
 
-                var bookedSlotsForThisCourt = bookedSlotsByCourt.ContainsKey(court.Id) 
-                    ? bookedSlotsByCourt[court.Id] 
-                    : new List<int>();
-
                 foreach (var slot in timeSlotDtos)
                 {
-                    bool isBooked = bookedSlotsForThisCourt.Contains(slot.Id);
+                    bool isBooked = bookedSlotIds.Contains(slot.Id);
                     
                     courtAvailability.Slots.Add(new SlotAvailabilityDto
                     {

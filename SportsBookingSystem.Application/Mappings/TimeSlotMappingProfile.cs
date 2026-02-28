@@ -9,6 +9,7 @@ namespace SportsBookingSystem.Application.Mappings
         public TimeSlotMappingProfile()
         {
             CreateMap<TimeSlot, TimeSlotDto>();
+            CreateMap<TimeSlotCreateDto, TimeSlot>();
         }
     }
 }

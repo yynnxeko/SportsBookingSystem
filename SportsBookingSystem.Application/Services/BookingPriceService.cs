@@ -2,7 +2,6 @@ using SportsBookingSystem.Application.DTOs.BookingDtos;
 using SportsBookingSystem.Application.Interfaces.IRepositories;
 using SportsBookingSystem.Application.Interfaces.IService;
 using System;
-using System.Linq;
 using System.Threading.Tasks;
 
 namespace SportsBookingSystem.Application.Services
@@ -29,11 +28,7 @@ namespace SportsBookingSystem.Application.Services
                 return result; 
             }
 
-            var rules = await _priceRuleRepository.GetByCourtIdAsync(request.CourtId);
-            
             int dayOfWeek = (int)request.Date.DayOfWeek;
-
-            var applicableRules = rules.Where(r => r.DayOfWeek == dayOfWeek).ToList();
 
             foreach (var slotId in request.TimeSlotIds)
             {
@@ -43,8 +38,8 @@ namespace SportsBookingSystem.Application.Services
                     throw new ArgumentException($"TimeSlot with ID {slotId} not found.");
                 }
 
-                var matchingRule = applicableRules.FirstOrDefault(r => 
-                    r.StartTime <= slot.StartTime && r.EndTime >= slot.EndTime);
+                var matchingRule = await _priceRuleRepository.FindMatchingRuleAsync(
+                    request.CourtId, dayOfWeek, slot.StartTime, slot.EndTime);
 
                 decimal priceForSlot = 0;
                 string appliedRule = string.Empty;

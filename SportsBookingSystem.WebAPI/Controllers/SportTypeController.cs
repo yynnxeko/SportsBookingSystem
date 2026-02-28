@@ -19,23 +19,29 @@ namespace SportsBookingSystem.WebAPI.Controllers
         [HttpPost]
         public async Task<IActionResult> CreateSportType([FromBody] SportTypeCreatedDto sportType)
         {
-            var result = await _sportTypeService.AddSportTypeAsync(sportType);
-            if (result == null)
+            try
             {
-                return BadRequest("Failed to create sport type.");
+                var result = await _sportTypeService.AddSportTypeAsync(sportType);
+                return Ok(result);
             }
-            return Ok(result);
+            catch (ArgumentException ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetSportTypeById(int id)
         {
-            var result = await _sportTypeService.GetSportTypeByIdAsync(id);
-            if (result == null)
+            try
             {
-                return NotFound("Sport type not found.");
+                var result = await _sportTypeService.GetSportTypeByIdAsync(id);
+                return Ok(result);
             }
-            return Ok(result);
+            catch (ArgumentException ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
 
         [HttpGet]
@@ -46,16 +52,33 @@ namespace SportsBookingSystem.WebAPI.Controllers
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateSportType(int id,SportTypeCreatedDto dto)
+        public async Task<IActionResult> UpdateSportType(int id, [FromBody] SportTypeCreatedDto dto)
         {
-            var sportType = await _sportTypeService.GetSportTypeByIdAsync(id);
-            sportType.Name = dto.Name;
-            var result = await _sportTypeService.UpdateSportTypeAsync(sportType);
-            if (result == null)
+            try
             {
-                return NotFound("Sport type not found.");
+                var sportType = await _sportTypeService.GetSportTypeByIdAsync(id);
+                sportType.Name = dto.Name;
+                var result = await _sportTypeService.UpdateSportTypeAsync(sportType);
+                return Ok(result);
             }
-            return Ok(result);
+            catch (ArgumentException ex)
+            {
+                return NotFound(ex.Message);
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public async Task<IActionResult> DeleteSportType(int id)
+        {
+            try
+            {
+                await _sportTypeService.DeleteSportTypeAsync(id);
+                return NoContent();
+            }
+            catch (ArgumentException ex)
+            {
+                return NotFound(ex.Message);
+            }
         }
     } 
 }

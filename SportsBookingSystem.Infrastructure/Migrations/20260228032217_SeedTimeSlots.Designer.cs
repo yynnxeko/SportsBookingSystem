@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SportsBookingSystem.Infrastructure.Data;
 
@@ -11,9 +12,11 @@ using SportsBookingSystem.Infrastructure.Data;
 namespace SportsBookingSystem.Infrastructure.Migrations
 {
     [DbContext(typeof(SportsBookingSystemContext))]
-    partial class SportsBookingSystemContextModelSnapshot : ModelSnapshot
+    [Migration("20260228032217_SeedTimeSlots")]
+    partial class SeedTimeSlots
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

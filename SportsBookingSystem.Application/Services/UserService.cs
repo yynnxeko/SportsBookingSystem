@@ -43,7 +43,7 @@ namespace SportsBookingSystem.Application.Services
 
             return _mapper.Map<UserDto>(newUser);
         }
-        public async Task<List<UserDto>> GetAllAsync()
+        public async Task<IEnumerable<UserDto>> GetAllAsync()
         {
             var listUser = await _userRepository.GetAllAsync();
             return _mapper.Map<List<UserDto>>(listUser);

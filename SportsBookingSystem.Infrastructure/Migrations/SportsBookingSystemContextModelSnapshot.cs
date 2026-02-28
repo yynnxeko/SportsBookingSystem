@@ -233,6 +233,104 @@ namespace SportsBookingSystem.Infrastructure.Migrations
                         .IsUnique();
 
                     b.ToTable("TimeSlots");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            EndTime = new TimeOnly(7, 0, 0),
+                            StartTime = new TimeOnly(6, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 2,
+                            EndTime = new TimeOnly(8, 0, 0),
+                            StartTime = new TimeOnly(7, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 3,
+                            EndTime = new TimeOnly(9, 0, 0),
+                            StartTime = new TimeOnly(8, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 4,
+                            EndTime = new TimeOnly(10, 0, 0),
+                            StartTime = new TimeOnly(9, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 5,
+                            EndTime = new TimeOnly(11, 0, 0),
+                            StartTime = new TimeOnly(10, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 6,
+                            EndTime = new TimeOnly(12, 0, 0),
+                            StartTime = new TimeOnly(11, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 7,
+                            EndTime = new TimeOnly(13, 0, 0),
+                            StartTime = new TimeOnly(12, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 8,
+                            EndTime = new TimeOnly(14, 0, 0),
+                            StartTime = new TimeOnly(13, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 9,
+                            EndTime = new TimeOnly(15, 0, 0),
+                            StartTime = new TimeOnly(14, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 10,
+                            EndTime = new TimeOnly(16, 0, 0),
+                            StartTime = new TimeOnly(15, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 11,
+                            EndTime = new TimeOnly(17, 0, 0),
+                            StartTime = new TimeOnly(16, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 12,
+                            EndTime = new TimeOnly(18, 0, 0),
+                            StartTime = new TimeOnly(17, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 13,
+                            EndTime = new TimeOnly(19, 0, 0),
+                            StartTime = new TimeOnly(18, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 14,
+                            EndTime = new TimeOnly(20, 0, 0),
+                            StartTime = new TimeOnly(19, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 15,
+                            EndTime = new TimeOnly(21, 0, 0),
+                            StartTime = new TimeOnly(20, 0, 0)
+                        },
+                        new
+                        {
+                            Id = 16,
+                            EndTime = new TimeOnly(22, 0, 0),
+                            StartTime = new TimeOnly(21, 0, 0)
+                        });
                 });
 
             modelBuilder.Entity("SportsBookingSystem.Core.Models.User", b =>

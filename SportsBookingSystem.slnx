@@ -1,4 +1,5 @@
 <Solution>
+  <Folder Name="/Tests/" />
   <Project Path="SportsBookingSystem.Application/SportsBookingSystem.Application.csproj" />
   <Project Path="SportsBookingSystem.Core/SportsBookingSystem.Core.csproj" />
   <Project Path="SportsBookingSystem.Infrastructure/SportsBookingSystem.Infrastructure.csproj" />

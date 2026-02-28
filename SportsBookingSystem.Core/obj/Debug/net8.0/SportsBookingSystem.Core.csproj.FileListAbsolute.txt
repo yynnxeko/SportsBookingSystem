@@ -13,3 +13,4 @@ D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\De
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\refint\SportsBookingSystem.Core.dll
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.pdb
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\ref\SportsBookingSystem.Core.dll
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.Core\obj\Debug\net8.0\SportsBookingSystem.Core.sourcelink.json

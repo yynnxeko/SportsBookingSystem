@@ -9,3 +9,4 @@ D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.SharedKerne
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\refint\SportsBookingSystem.SharedKernel.dll
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\SportsBookingSystem.SharedKernel.pdb
 D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\ref\SportsBookingSystem.SharedKernel.dll
+D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\SportsBookingSystem.SharedKernel\obj\Debug\net8.0\SportsBookingSystem.SharedKernel.sourcelink.json

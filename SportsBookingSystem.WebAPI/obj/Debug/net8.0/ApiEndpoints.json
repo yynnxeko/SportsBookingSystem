@@ -1,0 +1,65 @@
+[
+  {
+    "ContainingType": "SportsBookingSystem.WebAPI.Controllers.SportTypeController",
+    "Method": "CreateSportType",
+    "RelativePath": "api/SportType",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "sportType",
+        "Type": "SportsBookingSystem.Application.DTOs.SportTypeDtos.SportTypeCreatedDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SportsBookingSystem.WebAPI.Controllers.SportTypeController",
+    "Method": "GetAllSportTypes",
+    "RelativePath": "api/SportType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SportsBookingSystem.WebAPI.Controllers.SportTypeController",
+    "Method": "GetSportTypeById",
+    "RelativePath": "api/SportType/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SportsBookingSystem.WebAPI.Controllers.SportTypeController",
+    "Method": "UpdateSportType",
+    "RelativePath": "api/SportType/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "dto",
+        "Type": "SportsBookingSystem.Application.DTOs.SportTypeDtos.SportTypeCreatedDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

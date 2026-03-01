@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\ki7\\swd\\SportsBookingSystem\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|d:\\ki7\\swd\\sportsbookingsystem\\sportsbookingsystem.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|solutionrelative:sportsbookingsystem.webapi\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0CB40336-1EC5-2217-5F9F-D9CF33B423F1}|SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj|d:\\ki7\\swd\\sportsbookingsystem\\sportsbookingsystem.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0CB40336-1EC5-2217-5F9F-D9CF33B423F1}|SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj|solutionrelative:sportsbookingsystem.application\\services\\userservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|d:\\ki7\\swd\\sportsbookingsystem\\sportsbookingsystem.webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|solutionrelative:sportsbookingsystem.webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,8 +22,21 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\ki7\\swd\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "SportsBookingSystem.WebAPI\\Controllers\\AuthController.cs",
+              "ToolTip": "D:\\ki7\\swd\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "SportsBookingSystem.WebAPI\\Controllers\\AuthController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T14:38:03.329Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
@@ -18,6 +44,32 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UserService.cs",
+              "DocumentMoniker": "D:\\ki7\\swd\\SportsBookingSystem\\SportsBookingSystem.Application\\Services\\UserService.cs",
+              "RelativeDocumentMoniker": "SportsBookingSystem.Application\\Services\\UserService.cs",
+              "ToolTip": "D:\\ki7\\swd\\SportsBookingSystem\\SportsBookingSystem.Application\\Services\\UserService.cs",
+              "RelativeToolTip": "SportsBookingSystem.Application\\Services\\UserService.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAAwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T14:37:47.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\ki7\\swd\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "SportsBookingSystem.WebAPI\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\ki7\\swd\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "SportsBookingSystem.WebAPI\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-01T14:37:01.053Z",
+              "EditorCaption": ""
             }
           ]
         }

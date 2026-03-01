@@ -36,3 +36,23 @@ C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem
 C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\refint\SportsBookingSystem.Application.dll
 C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.pdb
 C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\ref\SportsBookingSystem.Application.dll
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\SportsBookingSystem.Application.deps.json
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\SportsBookingSystem.Application.dll
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\SportsBookingSystem.Application.pdb
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\SportsBookingSystem.Core.dll
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\SportsBookingSystem.SharedKernel.dll
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\VNPAY.NET.dll
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\SportsBookingSystem.Core.pdb
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\SportsBookingSystem.SharedKernel.pdb
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\bin\Debug\net8.0\VNPAY.NET.pdb
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.csproj.AssemblyReference.cache
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.GeneratedMSBuildEditorConfig.editorconfig
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.AssemblyInfoInputs.cache
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.AssemblyInfo.cs
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.csproj.CoreCompileInputs.cache
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.sourcelink.json
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBo.581E044D.Up2Date
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.dll
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\refint\SportsBookingSystem.Application.dll
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\SportsBookingSystem.Application.pdb
+D:\ki7\swd\SportsBookingSystem\SportsBookingSystem.Application\obj\Debug\net8.0\ref\SportsBookingSystem.Application.dll

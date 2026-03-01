@@ -10,7 +10,7 @@
     <description>Thư viện hỗ trợ tích hợp thanh toán VNPAY sử dụng cho .NET</description>
     <copyright>© 2024 Phan Xuan Quang / VNPAY.NET</copyright>
     <tags>vnpay, vnpay.net, payment,vnPay</tags>
-    <repository type="git" url="https://github.com/phanxuanquang/VNPAY.NET" commit="5f51578537e6c803f9211735c40da8e02127a7c5" />
+    <repository type="git" url="https://github.com/phanxuanquang/VNPAY.NET" commit="58e522b407c5dd64d671549f472d42c640fd015f" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.1.1" exclude="Build,Analyzers" />
@@ -21,9 +21,9 @@
     </contentFiles>
   </metadata>
   <files>
-    <file src="C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.dll" target="lib\net8.0\VNPAY.NET.dll" />
-    <file src="C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\Icon.ico" target="content\Icon.ico" />
-    <file src="C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\Icon.ico" target="contentFiles\any\net8.0\Icon.ico" />
-    <file src="C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\Icon.png" target="\Icon.png" />
+    <file src="D:\ki7\swd\SportsBookingSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.dll" target="lib\net8.0\VNPAY.NET.dll" />
+    <file src="D:\ki7\swd\SportsBookingSystem\VNPAY.NET\Icon.ico" target="content\Icon.ico" />
+    <file src="D:\ki7\swd\SportsBookingSystem\VNPAY.NET\Icon.ico" target="contentFiles\any\net8.0\Icon.ico" />
+    <file src="D:\ki7\swd\SportsBookingSystem\VNPAY.NET\Icon.png" target="\Icon.png" />
   </files>
 </package>

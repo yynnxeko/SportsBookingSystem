@@ -18,6 +18,7 @@
     <ProjectReference Include="..\SportsBookingSystem.Application\SportsBookingSystem.Application.csproj" />
     <ProjectReference Include="..\SportsBookingSystem.Infrastructure\SportsBookingSystem.Infrastructure.csproj" />
     <ProjectReference Include="..\SportsBookingSystem.SharedKernel\SportsBookingSystem.SharedKernel.csproj" />
+    <ProjectReference Include="..\VNPAY.NET\VNPAY.NET.csproj" />
   </ItemGroup>
 
 </Project>

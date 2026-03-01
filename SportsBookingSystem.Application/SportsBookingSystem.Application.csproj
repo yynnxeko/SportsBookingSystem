@@ -19,6 +19,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SportsBookingSystem.Core\SportsBookingSystem.Core.csproj" />
     <ProjectReference Include="..\SportsBookingSystem.SharedKernel\SportsBookingSystem.SharedKernel.csproj" />
+    <ProjectReference Include="..\VNPAY.NET\VNPAY.NET.csproj" />
   </ItemGroup>
 
 </Project>

@@ -13,7 +13,11 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SportsBookingSystem.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+c9ea1e6b086c26f4555616cf967fff936bab2e45")]
+
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5f51578537e6c803f9211735c40da8e02127a7c5")]
+
 [assembly: System.Reflection.AssemblyProductAttribute("SportsBookingSystem.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SportsBookingSystem.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

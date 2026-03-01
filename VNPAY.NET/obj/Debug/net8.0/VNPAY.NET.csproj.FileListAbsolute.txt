@@ -1,0 +1,61 @@
+C:\Users\BINH\Downloads\git\lmsystem\LMSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.deps.json
+C:\Users\BINH\Downloads\git\lmsystem\LMSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.dll
+C:\Users\BINH\Downloads\git\lmsystem\LMSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.pdb
+C:\Users\BINH\Downloads\git\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.csproj.AssemblyReference.cache
+C:\Users\BINH\Downloads\git\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BINH\Downloads\git\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.AssemblyInfoInputs.cache
+C:\Users\BINH\Downloads\git\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.AssemblyInfo.cs
+C:\Users\BINH\Downloads\git\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.csproj.CoreCompileInputs.cache
+C:\Users\BINH\Downloads\git\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.dll
+C:\Users\BINH\Downloads\git\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\refint\VNPAY.NET.dll
+C:\Users\BINH\Downloads\git\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.pdb
+C:\Users\BINH\Downloads\git\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\ref\VNPAY.NET.dll
+C:\Users\BINH\Downloads\New folder\lmsystem\LMSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.deps.json
+C:\Users\BINH\Downloads\New folder\lmsystem\LMSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.dll
+C:\Users\BINH\Downloads\New folder\lmsystem\LMSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.pdb
+C:\Users\BINH\Downloads\New folder\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.csproj.AssemblyReference.cache
+C:\Users\BINH\Downloads\New folder\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BINH\Downloads\New folder\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.AssemblyInfoInputs.cache
+C:\Users\BINH\Downloads\New folder\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.AssemblyInfo.cs
+C:\Users\BINH\Downloads\New folder\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.csproj.CoreCompileInputs.cache
+C:\Users\BINH\Downloads\New folder\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.dll
+C:\Users\BINH\Downloads\New folder\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\refint\VNPAY.NET.dll
+C:\Users\BINH\Downloads\New folder\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.pdb
+C:\Users\BINH\Downloads\New folder\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\ref\VNPAY.NET.dll
+C:\Users\VicTus\Desktop\lmsystem\lmsystem\LMSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.deps.json
+C:\Users\VicTus\Desktop\lmsystem\lmsystem\LMSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.dll
+C:\Users\VicTus\Desktop\lmsystem\lmsystem\LMSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.pdb
+C:\Users\VicTus\Desktop\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.csproj.AssemblyReference.cache
+C:\Users\VicTus\Desktop\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\VicTus\Desktop\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.AssemblyInfoInputs.cache
+C:\Users\VicTus\Desktop\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.AssemblyInfo.cs
+C:\Users\VicTus\Desktop\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.csproj.CoreCompileInputs.cache
+C:\Users\VicTus\Desktop\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.dll
+C:\Users\VicTus\Desktop\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\refint\VNPAY.NET.dll
+C:\Users\VicTus\Desktop\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.pdb
+C:\Users\VicTus\Desktop\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\ref\VNPAY.NET.dll
+C:\Users\BINH\Downloads\New folder (2)\lmsystem\lmsystem\LMSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.deps.json
+C:\Users\BINH\Downloads\New folder (2)\lmsystem\lmsystem\LMSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.dll
+C:\Users\BINH\Downloads\New folder (2)\lmsystem\lmsystem\LMSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.pdb
+C:\Users\BINH\Downloads\New folder (2)\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.csproj.AssemblyReference.cache
+C:\Users\BINH\Downloads\New folder (2)\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BINH\Downloads\New folder (2)\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.AssemblyInfoInputs.cache
+C:\Users\BINH\Downloads\New folder (2)\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.AssemblyInfo.cs
+C:\Users\BINH\Downloads\New folder (2)\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.csproj.CoreCompileInputs.cache
+C:\Users\BINH\Downloads\New folder (2)\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.dll
+C:\Users\BINH\Downloads\New folder (2)\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\refint\VNPAY.NET.dll
+C:\Users\BINH\Downloads\New folder (2)\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.pdb
+C:\Users\BINH\Downloads\New folder (2)\lmsystem\lmsystem\LMSystem\VNPAY.NET\obj\Debug\net8.0\ref\VNPAY.NET.dll
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.deps.json
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.dll
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.pdb
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.csproj.AssemblyReference.cache
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.AssemblyInfoInputs.cache
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.AssemblyInfo.cs
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.csproj.CoreCompileInputs.cache
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.sourcelink.json
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.dll
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\refint\VNPAY.NET.dll
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.pdb
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\ref\VNPAY.NET.dll

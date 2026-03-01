@@ -13,5 +13,6 @@ namespace SportsBookingSystem.Application.Interfaces.IService
         Task<UserDto> CreateAsync(UserCreatedDto user);
         Task<IEnumerable<UserDto>> GetAllAsync();
         Task<UserDto> GetByIdAsync(Guid id);
+        Task<string> LoginAsync(UserLoginDto loginDto);
     }
 }

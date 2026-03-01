@@ -205,23 +205,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BINH\\.nuget\\packages\\": {},
+    "C:\\Users\\MSI\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "8.5.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\VNPAY.NET\\VNPAY.NET.csproj",
+      "projectUniqueName": "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\VNPAY.NET\\VNPAY.NET.csproj",
       "projectName": "VNPAY.NET",
-      "projectPath": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\VNPAY.NET\\VNPAY.NET.csproj",
-      "packagesPath": "C:\\Users\\BINH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\VNPAY.NET\\obj\\",
+      "projectPath": "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\VNPAY.NET\\VNPAY.NET.csproj",
+      "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\VNPAY.NET\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\BINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

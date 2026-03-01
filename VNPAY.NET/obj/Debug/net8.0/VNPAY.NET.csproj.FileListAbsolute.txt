@@ -59,3 +59,16 @@ C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\obj\Debug
 C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\refint\VNPAY.NET.dll
 C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.pdb
 C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\ref\VNPAY.NET.dll
+C:\Users\MSI\Documents\FPTU\SWD\SportsBookingSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.deps.json
+C:\Users\MSI\Documents\FPTU\SWD\SportsBookingSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.dll
+C:\Users\MSI\Documents\FPTU\SWD\SportsBookingSystem\VNPAY.NET\bin\Debug\net8.0\VNPAY.NET.pdb
+C:\Users\MSI\Documents\FPTU\SWD\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.csproj.AssemblyReference.cache
+C:\Users\MSI\Documents\FPTU\SWD\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSI\Documents\FPTU\SWD\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.AssemblyInfoInputs.cache
+C:\Users\MSI\Documents\FPTU\SWD\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.AssemblyInfo.cs
+C:\Users\MSI\Documents\FPTU\SWD\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.csproj.CoreCompileInputs.cache
+C:\Users\MSI\Documents\FPTU\SWD\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.sourcelink.json
+C:\Users\MSI\Documents\FPTU\SWD\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.dll
+C:\Users\MSI\Documents\FPTU\SWD\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\refint\VNPAY.NET.dll
+C:\Users\MSI\Documents\FPTU\SWD\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\VNPAY.NET.pdb
+C:\Users\MSI\Documents\FPTU\SWD\SportsBookingSystem\VNPAY.NET\obj\Debug\net8.0\ref\VNPAY.NET.dll

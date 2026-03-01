@@ -22,6 +22,7 @@ builder.Services.AddAutoMapper(typeof(SportTypeMappingProfile));
 builder.Services.AddAutoMapper(typeof(CourtMappingProfile));
 builder.Services.AddAutoMapper(typeof(CourtPriceRuleMappingProfile));
 builder.Services.AddAutoMapper(typeof(TimeSlotMappingProfile));
+builder.Services.AddAutoMapper(typeof(BookingMappingProfile));
 
 //Dependency Injection
 builder.Services.AddScoped<IUserRepository, UserRepository>();
@@ -36,6 +37,8 @@ builder.Services.AddScoped<ICourtPriceRuleService, CourtPriceRuleService>();
 builder.Services.AddScoped<ITimeSlotRepository, TimeSlotRepository>();
 builder.Services.AddScoped<ITimeSlotService, TimeSlotService>();
 builder.Services.AddScoped<IBookingPriceService, BookingPriceService>();
+builder.Services.AddScoped<IBookingRepository, BookingRepository>();
+builder.Services.AddScoped<IBookingService, BookingService>();
 
 // VnPay api
 builder.Services.AddSingleton<IVnpay, Vnpay>();

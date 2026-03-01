@@ -4241,23 +4241,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\BINH\\.nuget\\packages\\": {},
+    "C:\\Users\\MSI\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\SportsBookingSystem.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\SportsBookingSystem.Infrastructure.csproj",
       "projectName": "SportsBookingSystem.Infrastructure",
-      "projectPath": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\SportsBookingSystem.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\BINH\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\obj\\",
+      "projectPath": "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\SportsBookingSystem.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\BINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -4272,11 +4272,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj": {
-              "projectPath": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj"
+            "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj": {
+              "projectPath": "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj"
             },
-            "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj": {
-              "projectPath": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj"
+            "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj": {
+              "projectPath": "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj"
             }
           }
         }

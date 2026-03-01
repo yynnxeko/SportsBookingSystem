@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj": {}
+    "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj": {}
   },
   "projects": {
-    "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj": {
+    "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj",
+        "projectUniqueName": "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj",
         "projectName": "SportsBookingSystem.SharedKernel",
-        "projectPath": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj",
-        "packagesPath": "C:\\Users\\BINH\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\BINH\\Downloads\\ki 7\\swd\\project\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\obj\\",
+        "projectPath": "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj",
+        "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\MSI\\Documents\\FPTU\\SWD\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\BINH\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\MSI\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],

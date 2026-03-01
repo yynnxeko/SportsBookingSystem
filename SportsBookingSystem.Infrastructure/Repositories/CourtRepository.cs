@@ -54,7 +54,9 @@ namespace SportsBookingSystem.Infrastructure.Repositories
         public async Task<List<int>> GetBookedTimeSlotIdsAsync(Guid courtId, DateOnly date)
         {
             return await _context.BookingDetails
-                .Where(bd => bd.CourtId == courtId && bd.BookingDate == date)
+                .Where(bd => bd.CourtId == courtId
+                    && bd.BookingDate == date
+                    && bd.Booking.Status != "Cancelled")
                 .Select(bd => bd.TimeSlotId)
                 .ToListAsync();
         }

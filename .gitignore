@@ -1,38 +1,66 @@
+# Visual Studio / VS Code
+.vs/
+.vscode/
+
 # Build results
-bin/
-obj/
-Debug/
-Release/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Tt]emp/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Backup & Cache
+*.bak
+*.cache
+*.cache.json
+*.log
+*.pdb
+*.ldb
+AssemblyInfoInputs.cache
+
+# Test results
+[Tt]est[Rr]esult*/
+*.trx
+*.coverage
+*.coveragexml
 
 # NuGet
 *.nupkg
 *.snupkg
-# Các file cache và restore sinh tự động
-project.lock.json
+packages/
 project.assets.json
 project.nuget.cache
 *.nuget.g.props
 *.nuget.g.targets
 *.nuget.dgspec.json
 
-# VS Code
-.vscode/
+# Resharper
+_ReSharper*/
+*.DotSettings.user
 
-# Visual Studio
-*.user
-*.suo
-*.userosscache
-*.sln.docstates
+# Rider
+.idea/
 
-# Logs
-*.log
+# Mac & Linux
+.DS_Store
+*.swp
+*.swo
+*.tmp
 
-# Test results
-TestResult*/
-*.trx
-*.coverage
-*.coveragexml
+# Publish
+publish/
+wwwroot/dist/
+node_modules/
 
-# Others
-*.DS_Store
-Thumbs.db
+# Appsettings (nếu không muốn commit config)
+appsettings.Development.json
+appsettings.json
+
+# Dumps
+*.stackdump
+*.dmp

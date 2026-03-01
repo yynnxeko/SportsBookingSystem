@@ -3,28 +3,40 @@
   "WorkspaceRootPath": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0CB40336-1EC5-2217-5F9F-D9CF33B423F1}|SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj|d:\\project\\projectmonhoc\\swd\\sportsbookingsystem\\sportsbookingsystem.application\\services\\bookingpriceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CB40336-1EC5-2217-5F9F-D9CF33B423F1}|SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj|solutionrelative:sportsbookingsystem.application\\services\\bookingpriceservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|d:\\project\\projectmonhoc\\swd\\sportsbookingsystem\\sportsbookingsystem.webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|solutionrelative:sportsbookingsystem.webapi\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CB40336-1EC5-2217-5F9F-D9CF33B423F1}|SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj|d:\\project\\projectmonhoc\\swd\\sportsbookingsystem\\sportsbookingsystem.application\\services\\courtpriceruleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CB40336-1EC5-2217-5F9F-D9CF33B423F1}|SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj|solutionrelative:sportsbookingsystem.application\\services\\courtpriceruleservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|d:\\project\\projectmonhoc\\swd\\sportsbookingsystem\\sportsbookingsystem.webapi\\controllers\\timeslotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|solutionrelative:sportsbookingsystem.webapi\\controllers\\timeslotcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{0CB40336-1EC5-2217-5F9F-D9CF33B423F1}|SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj|d:\\project\\projectmonhoc\\swd\\sportsbookingsystem\\sportsbookingsystem.application\\services\\courtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{0CB40336-1EC5-2217-5F9F-D9CF33B423F1}|SportsBookingSystem.Application\\SportsBookingSystem.Application.csproj|solutionrelative:sportsbookingsystem.application\\services\\courtservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|d:\\project\\projectmonhoc\\swd\\sportsbookingsystem\\sportsbookingsystem.webapi\\controllers\\sporttypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|solutionrelative:sportsbookingsystem.webapi\\controllers\\sporttypecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BACF64D-CC65-8764-3485-7EDE7A475415}|SportsBookingSystem.Core\\SportsBookingSystem.Core.csproj|d:\\project\\projectmonhoc\\swd\\sportsbookingsystem\\sportsbookingsystem.core\\models\\courtpricerule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BACF64D-CC65-8764-3485-7EDE7A475415}|SportsBookingSystem.Core\\SportsBookingSystem.Core.csproj|solutionrelative:sportsbookingsystem.core\\models\\courtpricerule.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|d:\\project\\projectmonhoc\\swd\\sportsbookingsystem\\sportsbookingsystem.webapi\\controllers\\courtpricerulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|solutionrelative:sportsbookingsystem.webapi\\controllers\\courtpricerulecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6BACF64D-CC65-8764-3485-7EDE7A475415}|SportsBookingSystem.Core\\SportsBookingSystem.Core.csproj|d:\\project\\projectmonhoc\\swd\\sportsbookingsystem\\sportsbookingsystem.core\\models\\court.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6BACF64D-CC65-8764-3485-7EDE7A475415}|SportsBookingSystem.Core\\SportsBookingSystem.Core.csproj|solutionrelative:sportsbookingsystem.core\\models\\court.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|d:\\project\\projectmonhoc\\swd\\sportsbookingsystem\\sportsbookingsystem.webapi\\controllers\\courtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|solutionrelative:sportsbookingsystem.webapi\\controllers\\courtcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|d:\\project\\projectmonhoc\\swd\\sportsbookingsystem\\sportsbookingsystem.webapi\\controllers\\bookingpricecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{82271245-8E9C-17FD-9D31-DC43EBDA2BAE}|SportsBookingSystem.WebAPI\\SportsBookingSystem.WebAPI.csproj|solutionrelative:sportsbookingsystem.webapi\\controllers\\bookingpricecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9DAADA4-19B6-F71C-DDB3-DFA87BB26040}|SportsBookingSystem.Infrastructure\\SportsBookingSystem.Infrastructure.csproj|d:\\project\\projectmonhoc\\swd\\sportsbookingsystem\\sportsbookingsystem.infrastructure\\repositories\\sporttyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9DAADA4-19B6-F71C-DDB3-DFA87BB26040}|SportsBookingSystem.Infrastructure\\SportsBookingSystem.Infrastructure.csproj|solutionrelative:sportsbookingsystem.infrastructure\\repositories\\sporttyperepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9DAADA4-19B6-F71C-DDB3-DFA87BB26040}|SportsBookingSystem.Infrastructure\\SportsBookingSystem.Infrastructure.csproj|d:\\project\\projectmonhoc\\swd\\sportsbookingsystem\\sportsbookingsystem.infrastructure\\repositories\\courtrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9DAADA4-19B6-F71C-DDB3-DFA87BB26040}|SportsBookingSystem.Infrastructure\\SportsBookingSystem.Infrastructure.csproj|solutionrelative:sportsbookingsystem.infrastructure\\repositories\\courtrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9DAADA4-19B6-F71C-DDB3-DFA87BB26040}|SportsBookingSystem.Infrastructure\\SportsBookingSystem.Infrastructure.csproj|d:\\project\\projectmonhoc\\swd\\sportsbookingsystem\\sportsbookingsystem.infrastructure\\repositories\\courtpricerulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9DAADA4-19B6-F71C-DDB3-DFA87BB26040}|SportsBookingSystem.Infrastructure\\SportsBookingSystem.Infrastructure.csproj|solutionrelative:sportsbookingsystem.infrastructure\\repositories\\courtpricerulerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -34,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 210,
-          "SelectedChildIndex": 15,
+          "SelectedChildIndex": 14,
           "Children": [
             {
               "$type": "Bookmark",
@@ -94,29 +106,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "CourtPriceRuleService.cs",
-              "DocumentMoniker": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Application\\Services\\CourtPriceRuleService.cs",
-              "RelativeDocumentMoniker": "SportsBookingSystem.Application\\Services\\CourtPriceRuleService.cs",
-              "ToolTip": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Application\\Services\\CourtPriceRuleService.cs",
-              "RelativeToolTip": "SportsBookingSystem.Application\\Services\\CourtPriceRuleService.cs",
-              "ViewState": "AgIAAEsAAAAAAAAAAAA4wCcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "UserController.cs",
+              "DocumentMoniker": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\UserController.cs",
+              "RelativeDocumentMoniker": "SportsBookingSystem.WebAPI\\Controllers\\UserController.cs",
+              "ToolTip": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\UserController.cs",
+              "RelativeToolTip": "SportsBookingSystem.WebAPI\\Controllers\\UserController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T11:14:07.157Z",
+              "WhenOpened": "2026-02-28T16:54:33.375Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "BookingPriceService.cs",
-              "DocumentMoniker": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Application\\Services\\BookingPriceService.cs",
-              "RelativeDocumentMoniker": "SportsBookingSystem.Application\\Services\\BookingPriceService.cs",
-              "ToolTip": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Application\\Services\\BookingPriceService.cs",
-              "RelativeToolTip": "SportsBookingSystem.Application\\Services\\BookingPriceService.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAARAAAAAAAAAA==",
+              "DocumentIndex": 1,
+              "Title": "TimeSlotController.cs",
+              "DocumentMoniker": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\TimeSlotController.cs",
+              "RelativeDocumentMoniker": "SportsBookingSystem.WebAPI\\Controllers\\TimeSlotController.cs",
+              "ToolTip": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\TimeSlotController.cs",
+              "RelativeToolTip": "SportsBookingSystem.WebAPI\\Controllers\\TimeSlotController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T11:12:32.5Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T16:54:32.648Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SportTypeController.cs",
+              "DocumentMoniker": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\SportTypeController.cs",
+              "RelativeDocumentMoniker": "SportsBookingSystem.WebAPI\\Controllers\\SportTypeController.cs",
+              "ToolTip": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\SportTypeController.cs",
+              "RelativeToolTip": "SportsBookingSystem.WebAPI\\Controllers\\SportTypeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T16:54:32.02Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CourtPriceRuleController.cs",
+              "DocumentMoniker": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\CourtPriceRuleController.cs",
+              "RelativeDocumentMoniker": "SportsBookingSystem.WebAPI\\Controllers\\CourtPriceRuleController.cs",
+              "ToolTip": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\CourtPriceRuleController.cs",
+              "RelativeToolTip": "SportsBookingSystem.WebAPI\\Controllers\\CourtPriceRuleController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T16:54:29.162Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CourtController.cs",
+              "DocumentMoniker": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\CourtController.cs",
+              "RelativeDocumentMoniker": "SportsBookingSystem.WebAPI\\Controllers\\CourtController.cs",
+              "ToolTip": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\CourtController.cs",
+              "RelativeToolTip": "SportsBookingSystem.WebAPI\\Controllers\\CourtController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T16:54:29.432Z"
             },
             {
               "$type": "Document",
@@ -126,47 +173,45 @@
               "RelativeDocumentMoniker": "SportsBookingSystem.WebAPI\\Controllers\\BookingPriceController.cs",
               "ToolTip": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.WebAPI\\Controllers\\BookingPriceController.cs",
               "RelativeToolTip": "SportsBookingSystem.WebAPI\\Controllers\\BookingPriceController.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABAAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T03:53:29.904Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "CourtService.cs",
-              "DocumentMoniker": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Application\\Services\\CourtService.cs",
-              "RelativeDocumentMoniker": "SportsBookingSystem.Application\\Services\\CourtService.cs",
-              "ToolTip": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Application\\Services\\CourtService.cs",
-              "RelativeToolTip": "SportsBookingSystem.Application\\Services\\CourtService.cs",
-              "ViewState": "AgIAAFQAAAAAAAAAAAAmwHwAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T03:35:47.292Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "CourtPriceRule.cs",
-              "DocumentMoniker": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Core\\Models\\CourtPriceRule.cs",
-              "RelativeDocumentMoniker": "SportsBookingSystem.Core\\Models\\CourtPriceRule.cs",
-              "ToolTip": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Core\\Models\\CourtPriceRule.cs",
-              "RelativeToolTip": "SportsBookingSystem.Core\\Models\\CourtPriceRule.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T02:48:51.22Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-28T16:54:27.584Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Court.cs",
-              "DocumentMoniker": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Core\\Models\\Court.cs",
-              "RelativeDocumentMoniker": "SportsBookingSystem.Core\\Models\\Court.cs",
-              "ToolTip": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Core\\Models\\Court.cs",
-              "RelativeToolTip": "SportsBookingSystem.Core\\Models\\Court.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 6,
+              "Title": "SportTypeRepository.cs",
+              "DocumentMoniker": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\Repositories\\SportTypeRepository.cs",
+              "RelativeDocumentMoniker": "SportsBookingSystem.Infrastructure\\Repositories\\SportTypeRepository.cs",
+              "ToolTip": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\Repositories\\SportTypeRepository.cs",
+              "RelativeToolTip": "SportsBookingSystem.Infrastructure\\Repositories\\SportTypeRepository.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-28T02:48:49.163Z"
+              "WhenOpened": "2026-02-28T16:54:23.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "CourtRepository.cs",
+              "DocumentMoniker": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\Repositories\\CourtRepository.cs",
+              "RelativeDocumentMoniker": "SportsBookingSystem.Infrastructure\\Repositories\\CourtRepository.cs",
+              "ToolTip": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\Repositories\\CourtRepository.cs",
+              "RelativeToolTip": "SportsBookingSystem.Infrastructure\\Repositories\\CourtRepository.cs",
+              "ViewState": "AgIAADQAAAAAAAAAAAAcwB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T16:54:12.465Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "CourtPriceRuleRepository.cs",
+              "DocumentMoniker": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\Repositories\\CourtPriceRuleRepository.cs",
+              "RelativeDocumentMoniker": "SportsBookingSystem.Infrastructure\\Repositories\\CourtPriceRuleRepository.cs",
+              "ToolTip": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.Infrastructure\\Repositories\\CourtPriceRuleRepository.cs",
+              "RelativeToolTip": "SportsBookingSystem.Infrastructure\\Repositories\\CourtPriceRuleRepository.cs",
+              "ViewState": "AgIAADYAAAAAAAAAAAAmwEQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-02-28T16:53:44.2Z"
             }
           ]
         }

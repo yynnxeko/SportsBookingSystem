@@ -1,6 +1,19 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
+    "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj": {}
+  },
+  "projects": {
+    "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj",
+        "projectName": "SportsBookingSystem.SharedKernel",
+        "projectPath": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj",
+        "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
+        "outputPath": "D:\\Project\\ProjectMonHoc\\SWD\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\obj\\",
+=======
     "D:\\ki7\\swd\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj": {}
   },
   "projects": {
@@ -12,12 +25,17 @@
         "projectPath": "D:\\ki7\\swd\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\SportsBookingSystem.SharedKernel.csproj",
         "packagesPath": "C:\\Users\\ADMIN\\.nuget\\packages\\",
         "outputPath": "D:\\ki7\\swd\\SportsBookingSystem\\SportsBookingSystem.SharedKernel\\obj\\",
+>>>>>>> master
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
+<<<<<<< HEAD
+          "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
           "C:\\Users\\ADMIN\\AppData\\Roaming\\NuGet\\NuGet.Config",
+>>>>>>> master
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +44,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +63,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.300"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net8.0": {
@@ -65,7 +84,11 @@
               "privateAssets": "all"
             }
           },
+<<<<<<< HEAD
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.103/PortableRuntimeIdentifierGraph.json"
+=======
           "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
+>>>>>>> master
         }
       }
     }

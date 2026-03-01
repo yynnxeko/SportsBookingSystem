@@ -14,7 +14,15 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SportsBookingSystem.SharedKernel")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
+<<<<<<< HEAD
 [assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+45bf2e2d8cdf02a6c166f2856069ac3a2b2477a7")]
+=======
+<<<<<<< HEAD
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8077925afa9139d3e1bd3e312aba4f961ef89ab9")]
+=======
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+58e522b407c5dd64d671549f472d42c640fd015f")]
+>>>>>>> master
+>>>>>>> LongTH
 [assembly: System.Reflection.AssemblyProductAttribute("SportsBookingSystem.SharedKernel")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SportsBookingSystem.SharedKernel")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -27,6 +27,7 @@ builder.Services.AddAutoMapper(typeof(TimeSlotMappingProfile));
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IPaymentTransactionRepository, PaymentTransactionRepository>();
+builder.Services.AddScoped<IWalletTransactionRepository, WalletTransactionRepository>();
 builder.Services.AddScoped<ISportTypeRepository, SportTypeRepository>();
 builder.Services.AddScoped<ISportTypeService, SportTypeService>();
 builder.Services.AddScoped<ICourtRepository, CourtRepository>();

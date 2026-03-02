@@ -46,6 +46,7 @@ namespace SportsBookingSystem.Infrastructure.Repositories
                 return null;
             
             return user;
+            return user;
         }
 
         public async Task<User?> UpdateAsync(User user)
@@ -55,5 +56,9 @@ namespace SportsBookingSystem.Infrastructure.Repositories
             return user;
         }
 
+        public async Task<User?> GetByEmailAsync(string email)
+        {
+            return await _context.Users.FirstOrDefaultAsync(x => x.Email == email);
+        }
     }
 }

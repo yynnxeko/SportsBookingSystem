@@ -1,8 +1,0 @@
-D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\Tests\SportsBookingSystem.Application.Tests\bin\Debug\net10.0\.msCoverageSourceRootsMapping_SportsBookingSystem.Application.Tests
-D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\Tests\SportsBookingSystem.Application.Tests\bin\Debug\net10.0\CoverletSourceRootsMapping_SportsBookingSystem.Application.Tests
-D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\Tests\SportsBookingSystem.Application.Tests\obj\Debug\net10.0\SportsBookingSystem.Application.Tests.csproj.AssemblyReference.cache
-D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\Tests\SportsBookingSystem.Application.Tests\obj\Debug\net10.0\SportsBookingSystem.Application.Tests.GeneratedMSBuildEditorConfig.editorconfig
-D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\Tests\SportsBookingSystem.Application.Tests\obj\Debug\net10.0\SportsBookingSystem.Application.Tests.AssemblyInfoInputs.cache
-D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\Tests\SportsBookingSystem.Application.Tests\obj\Debug\net10.0\SportsBookingSystem.Application.Tests.AssemblyInfo.cs
-D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\Tests\SportsBookingSystem.Application.Tests\obj\Debug\net10.0\SportsBookingSystem.Application.Tests.csproj.CoreCompileInputs.cache
-D:\Project\ProjectMonHoc\SWD\SportsBookingSystem\Tests\SportsBookingSystem.Application.Tests\obj\Debug\net10.0\SportsBookingSystem.Application.Tests.sourcelink.json

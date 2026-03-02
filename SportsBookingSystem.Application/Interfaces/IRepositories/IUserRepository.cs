@@ -14,5 +14,6 @@ namespace SportsBookingSystem.Application.Interfaces.IRepositories
         Task<User?> GetByIdAsync(Guid id);
         Task<bool> IsEmailExistedAsync(string email);
         Task<User?> UpdateAsync(User user);
+        Task<User?> GetByEmailAsync(string email);
     }
 }

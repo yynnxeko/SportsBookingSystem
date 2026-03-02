@@ -14,5 +14,6 @@ namespace SportsBookingSystem.Application.Interfaces.IService
         Task<IEnumerable<UserDto>> GetAllAsync();
         Task<UserDto> GetByIdAsync(Guid id);
         Task<bool> UpdateWalletBalanceAsync(Guid userId, decimal amount, string transactionType, Guid? referenceId = null);
+        Task<string> LoginAsync(UserLoginDto loginDto);
     }
 }

@@ -10,7 +10,7 @@
     <description>Thư viện hỗ trợ tích hợp thanh toán VNPAY sử dụng cho .NET</description>
     <copyright>© 2024 Phan Xuan Quang / VNPAY.NET</copyright>
     <tags>vnpay, vnpay.net, payment,vnPay</tags>
-    <repository type="git" url="https://github.com/phanxuanquang/VNPAY.NET" commit="58e522b407c5dd64d671549f472d42c640fd015f" />
+    <repository type="git" url="https://github.com/phanxuanquang/VNPAY.NET" commit="253e66f80736ed6ad81fa96020d82e72f5fcf781" />
     <dependencies>
       <group targetFramework="net8.0">
         <dependency id="Microsoft.AspNetCore.Http.Abstractions" version="2.1.1" exclude="Build,Analyzers" />

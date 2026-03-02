@@ -30,7 +30,6 @@ namespace SportsBookingSystem.Infrastructure.Repositories
             var court = await _context.Courts.FindAsync(id);
             if (court == null) return false;
 
-            // Soft delete by updating IsActive flag
             court.IsActive = false;
             await _context.SaveChangesAsync();
             return true;

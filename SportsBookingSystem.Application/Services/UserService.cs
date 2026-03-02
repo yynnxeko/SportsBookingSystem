@@ -7,8 +7,8 @@ using SportsBookingSystem.Core.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Configuration;
 
 namespace SportsBookingSystem.Application.Services
 {
@@ -17,15 +17,18 @@ namespace SportsBookingSystem.Application.Services
         private readonly IUserRepository _userRepository;
         private readonly IWalletTransactionRepository _walletTransactionRepository;
         private readonly IMapper _mapper;
+        private readonly IConfiguration _configuration;
         
         public UserService(
             IUserRepository userRepository, 
             IWalletTransactionRepository walletTransactionRepository,
-            IMapper mapper)
+            IMapper mapper,
+            IConfiguration configuration)
         {
             _userRepository = userRepository;
             _walletTransactionRepository = walletTransactionRepository;
             _mapper = mapper;
+            _configuration = configuration;
         }
         
         public async Task<UserDto> CreateAsync(UserCreatedDto user)
@@ -96,6 +99,18 @@ namespace SportsBookingSystem.Application.Services
             await _walletTransactionRepository.CreateAsync(transaction);
 
             return true;
+        }
+
+        public async Task<string> LoginAsync(UserLoginDto loginDto)
+        {
+            var user = await _userRepository.GetByEmailAsync(loginDto.Email);
+            if (user == null || !AuthHelper.VerifyPassword(loginDto.Password, user.PasswordHash))
+            {
+                throw new UnauthorizedAccessException("Invalid email or password");
+            }
+
+            var token = AuthHelper.GenerateJwtToken(user, _configuration);
+            return token;
         }
     }
 }

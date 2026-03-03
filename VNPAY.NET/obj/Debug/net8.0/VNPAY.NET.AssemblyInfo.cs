@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCopyrightAttribute("© 2024 Phan Xuan Quang / VNPAY.NET")]
 [assembly: System.Reflection.AssemblyDescriptionAttribute("Thư viện hỗ trợ tích hợp thanh toán VNPAY sử dụng cho .NET")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("8.5.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("8.5.0+58e522b407c5dd64d671549f472d42c640fd015f")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("8.5.0+9478eac0ac71c825e2a280d8412a59feba1b4b85")]
 [assembly: System.Reflection.AssemblyProductAttribute("VNPAY.NET")]
 [assembly: System.Reflection.AssemblyTitleAttribute("VNPAY.NET")]
 [assembly: System.Reflection.AssemblyVersionAttribute("8.5.0")]

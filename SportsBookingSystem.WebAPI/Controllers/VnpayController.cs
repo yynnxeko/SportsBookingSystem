@@ -6,6 +6,11 @@ using VNPAY.NET.Enums;
 using VNPAY.NET.Models;
 using VNPAY.NET.Utilities;
 using System;
+using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
+using SportsBookingSystem.Application.Interfaces.IRepositories;
+using SportsBookingSystem.Core.Models;
 
 namespace SportsBookingSystem.WebAPI.Controllers
 {
@@ -15,11 +20,22 @@ namespace SportsBookingSystem.WebAPI.Controllers
     {
         private readonly IVnpay _vnpay;
         private readonly VnpayOptions _options;
+        private readonly IPaymentTransactionRepository _paymentRepo;
+        private readonly IWalletTransactionRepository _walletRepo;
+        private readonly IUserRepository _userRepo;
 
-        public VnpayController(IVnpay vnPayservice, IOptions<VnpayOptions> options)
+        public VnpayController(
+            IVnpay vnPayservice, 
+            IOptions<VnpayOptions> options,
+            IPaymentTransactionRepository paymentRepo,
+            IWalletTransactionRepository walletRepo,
+            IUserRepository userRepo)
         {
             _vnpay = vnPayservice;
             _options = options.Value;
+            _paymentRepo = paymentRepo;
+            _walletRepo = walletRepo;
+            _userRepo = userRepo;
 
             _vnpay.Initialize(_options.TmnCode, _options.HashSecret, _options.BaseUrl, _options.CallbackUrl);
         }
@@ -31,17 +47,25 @@ namespace SportsBookingSystem.WebAPI.Controllers
         /// <param name="description">Mô tả giao dịch</param>
         /// <returns></returns>
         [HttpGet("CreatePaymentUrl")]
-        public ActionResult<string> CreatePaymentUrl(double money, string? description = "Thanh toan dich vu")
+        public ActionResult<string> CreatePaymentUrl(double money, string userId, string? description = "Thanh toan dich vu")
         {
             try
             {
                 var ipAddress = NetworkHelper.GetIpAddress(HttpContext);
 
+                if (string.IsNullOrEmpty(userId))
+                {
+                    return BadRequest("Vui lòng cung cấp UserId");
+                }
+
+                var generatedDesc = string.IsNullOrEmpty(description) ? "Thanh toan dich vu" : description;
+                generatedDesc += $" userId: {userId}";
+
                 var request = new PaymentRequest
                 {
                     PaymentId = DateTime.Now.Ticks,
                     Money = money,
-                    Description = description,
+                    Description = generatedDesc,
                     IpAddress = ipAddress,
                     BankCode = BankCode.ANY,
                     CreatedDate = DateTime.Now,
@@ -63,16 +87,17 @@ namespace SportsBookingSystem.WebAPI.Controllers
         /// Thực hiện hành động sau khi thanh toán. (IPN Action)
         /// </summary>
         [HttpGet("IpnAction")]
-        public IActionResult IpnAction()
+        public async Task<IActionResult> IpnAction()
         {
             if (Request.QueryString.HasValue)
             {
                 try
                 {
                     var paymentResult = _vnpay.GetPaymentResult(Request.Query);
+                    await ProcessPaymentResultAsync(paymentResult);
+
                     if (paymentResult.IsSuccess)
                     {
-                        // TODO: Update PaymentTransaction status in database
                         return Ok();
                     }
                     return BadRequest("Thanh toán thất bại");
@@ -89,13 +114,14 @@ namespace SportsBookingSystem.WebAPI.Controllers
         /// Trả kết quả thanh toán về cho người dùng
         /// </summary>
         [HttpGet("Callback")]
-        public IActionResult Callback()
+        public async Task<IActionResult> Callback()
         {
             if (Request.QueryString.HasValue)
             {
                 try
                 {
                     var paymentResult = _vnpay.GetPaymentResult(Request.Query);
+                    await ProcessPaymentResultAsync(paymentResult);
 
                     if (!string.IsNullOrEmpty(_options.FrontendUrl))
                     {
@@ -196,6 +222,153 @@ namespace SportsBookingSystem.WebAPI.Controllers
             }
 
             return Content("<html><body><h1 style='text-align:center;font-family:sans-serif;margin-top:50px;'>Không tìm thấy thông tin thanh toán.</h1></body></html>", "text/html");
+        }
+
+        private async Task ProcessPaymentResultAsync(PaymentResult paymentResult)
+        {
+            var transCode = paymentResult.PaymentId.ToString();
+            var pt = await _paymentRepo.GetByTransactionCodeAsync(transCode);
+            
+            // Xử lý nạp tiền theo luồng nạp hệ thống qua CreateDepositUrl (đã có PaymentTransaction)
+            if (pt != null && pt.Status == "Pending")
+            {
+                if (paymentResult.IsSuccess)
+                {
+                    pt.Status = "Success";
+                    await _paymentRepo.UpdateAsync(pt);
+
+                    var user = await _userRepo.GetByIdAsync(pt.UserId);
+                    if (user != null)
+                    {
+                        user.WalletBalance += pt.Amount;
+                        await _userRepo.UpdateAsync(user);
+
+                        await _walletRepo.CreateAsync(new WalletTransaction
+                        {
+                            UserId = user.Id,
+                            Amount = pt.Amount,
+                            Type = "Deposit",
+                            ReferenceId = pt.Id,
+                            CreatedAt = DateTime.Now
+                        });
+                    }
+                }
+                else
+                {
+                    pt.Status = "Failed";
+                    await _paymentRepo.UpdateAsync(pt);
+                }
+            }
+            // Xử lý trường hợp có giao dịch thành công trả về nhưng chưa được lưu trước đó vào hệ thống
+            // Ví dụ người dùng thanh toán qua CreatePaymentUrl mặc định
+            else if (pt == null && paymentResult.IsSuccess && Request.Query["vnp_ResponseCode"] == "00")
+            {
+                var amountRaw = Request.Query["vnp_Amount"].ToString();
+                if (double.TryParse(amountRaw, out var amountVal))
+                {
+                    decimal exactAmount = (decimal)(amountVal / 100);
+
+                    // Trích xuất UserId từ OrderInfo nếu có. Ví dụ "Thanh toan dich vu cho userId: 1234-abcd..."
+                    var orderInfo = Request.Query["vnp_OrderInfo"].ToString();
+                    Guid targetUserId = Guid.Empty; // Mặc định nếu không tìm thấy UserId
+                    
+                    // Thử tìm user đang đăng nhập (nhưng callback này thường do server-to-server gọi nên không có Auth context chứa token)
+                    // Nếu khách có dùng UserId nhúng vào OrderInfo
+                    foreach(var part in orderInfo.Split(new char[] { ' ', ':' }, StringSplitOptions.RemoveEmptyEntries))
+                    {
+                        if(Guid.TryParse(part, out Guid parsedId))
+                        {
+                            targetUserId = parsedId;
+                            break;
+                        }
+                    }
+
+                    if (targetUserId != Guid.Empty)
+                    {
+                        var user = await _userRepo.GetByIdAsync(targetUserId);
+                        if(user != null)
+                        {
+                            // Tạm tạo 1 bản ghi PaymentTransactions để thoả mãn "luu luon ca lich su chuyen khoan vao PaymentTransactions"
+                            var newPayment = new PaymentTransaction
+                            {
+                                UserId = targetUserId, // Yêu cầu người dùng truyền đúng UserId lên OrderInfo
+                                Amount = exactAmount,
+                                PaymentGateway = "VNPAY",
+                                TransactionCode = transCode,
+                                Status = "Success",
+                                CreatedAt = DateTime.Now
+                            };
+                            await _paymentRepo.CreateAsync(newPayment);
+
+                            user.WalletBalance += exactAmount;
+                            await _userRepo.UpdateAsync(user);
+                            
+                            // Lưu lịch sử ví (wallet transaction)
+                             await _walletRepo.CreateAsync(new WalletTransaction
+                            {
+                                UserId = targetUserId,
+                                Amount = exactAmount,
+                                Type = "Deposit",
+                                ReferenceId = newPayment.Id,
+                                CreatedAt = DateTime.Now
+                            });
+                        }
+                    }
+                }
+            }
+        }
+
+        /// <summary>
+        /// Tạo url nạp tiền vào ví
+        /// </summary>
+        [HttpPost("DepositAmount")]
+        [Authorize]
+        public async Task<ActionResult<string>> CreateDepositUrl([FromBody] double amount)
+        {
+            try
+            {
+                var userIdClaim = User.FindFirst(ClaimTypes.NameIdentifier);
+                if (userIdClaim == null || !Guid.TryParse(userIdClaim.Value, out Guid userId))
+                    return Unauthorized();
+
+                var user = await _userRepo.GetByIdAsync(userId);
+                if (user == null) return NotFound("Người dùng không tồn tại");
+
+                if (amount <= 0) return BadRequest("Số tiền phải lớn hơn 0");
+
+                var ipAddress = NetworkHelper.GetIpAddress(HttpContext);
+                long ticks = DateTime.Now.Ticks;
+
+                var pt = new PaymentTransaction
+                {
+                    UserId = userId,
+                    Amount = (decimal)amount,
+                    PaymentGateway = "VNPAY",
+                    TransactionCode = ticks.ToString(),
+                    Status = "Pending",
+                    CreatedAt = DateTime.Now
+                };
+                await _paymentRepo.CreateAsync(pt);
+
+                var request = new PaymentRequest
+                {
+                    PaymentId = ticks,
+                    Money = amount,
+                    Description = $"Nap tien vao vi Sport Booking {userId}",
+                    IpAddress = ipAddress,
+                    BankCode = BankCode.ANY,
+                    CreatedDate = DateTime.Now,
+                    Currency = Currency.VND,
+                    Language = DisplayLanguage.Vietnamese
+                };
+
+                var paymentUrl = _vnpay.GetPaymentUrl(request);
+                return Created(paymentUrl, paymentUrl);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
         }
     }
 }

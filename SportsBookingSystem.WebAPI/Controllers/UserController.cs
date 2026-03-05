@@ -20,7 +20,22 @@ namespace SportsBookingSystem.WebAPI.Controllers
             _userService = userService;
         }
 
-        [HttpGet("profile")]
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var users = await _userService.GetAllAsync();
+            return Ok(users);
+        }
+
+        [HttpGet("{id}")]
+        public async Task<IActionResult> GetById(Guid id)
+        {
+            var user = await _userService.GetByIdAsync(id);
+            if (user == null) return NotFound();
+            return Ok(user);
+        }
+            [HttpGet("profile")]
         [Authorize]
         public async Task<IActionResult> GetProfile()
         {
@@ -31,6 +46,7 @@ namespace SportsBookingSystem.WebAPI.Controllers
 
             var user = await _userService.GetByIdAsync(userId);
             if (user == null) return NotFound("User not found");
+
 
             return Ok(user);
         }

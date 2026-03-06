@@ -19,6 +19,7 @@ project.nuget.cache
 .vscode/
 
 # Visual Studio
+.vs/
 *.user
 *.suo
 *.userosscache

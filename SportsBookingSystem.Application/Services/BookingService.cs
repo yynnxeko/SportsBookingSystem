@@ -16,6 +16,8 @@ namespace SportsBookingSystem.Application.Services
         private readonly ICourtRepository _courtRepository;
         private readonly ITimeSlotRepository _timeSlotRepository;
         private readonly IBookingPriceService _bookingPriceService;
+        private readonly IUserRepository _userRepository;
+        private readonly IWalletTransactionRepository _walletTransactionRepository;
         private readonly IMapper _mapper;
 
         public BookingService(
@@ -23,12 +25,16 @@ namespace SportsBookingSystem.Application.Services
             ICourtRepository courtRepository,
             ITimeSlotRepository timeSlotRepository,
             IBookingPriceService bookingPriceService,
+            IUserRepository userRepository,
+            IWalletTransactionRepository walletTransactionRepository,
             IMapper mapper)
         {
             _bookingRepository = bookingRepository;
             _courtRepository = courtRepository;
             _timeSlotRepository = timeSlotRepository;
             _bookingPriceService = bookingPriceService;
+            _userRepository = userRepository;
+            _walletTransactionRepository = walletTransactionRepository;
             _mapper = mapper;
         }
 
@@ -69,18 +75,31 @@ namespace SportsBookingSystem.Application.Services
             };
             var priceResult = await _bookingPriceService.CalculatePriceAsync(priceRequest);
 
-            // 4. Build Booking entity
+            // 4. Validate user exists and check wallet balance
+            var user = await _userRepository.GetByIdAsync(dto.UserId);
+            if (user == null)
+            {
+                throw new KeyNotFoundException($"User with ID {dto.UserId} not found.");
+            }
+
+            if (user.WalletBalance < priceResult.TotalPrice)
+            {
+                throw new InvalidOperationException(
+                    $"Insufficient wallet balance. Required: {priceResult.TotalPrice:N0} VND, Available: {user.WalletBalance:N0} VND.");
+            }
+
+            // 5. Build Booking entity (initially Pending until payment succeeds)
             var booking = new Booking
             {
                 Id = Guid.NewGuid(),
                 UserId = dto.UserId,
                 BookingDate = dto.BookingDate,
                 TotalPrice = priceResult.TotalPrice,
-                Status = "Confirmed",
+                Status = "Pending",
                 CreatedAt = DateTime.Now
             };
 
-            // 5. Build BookingDetail entities with price from breakdown
+            // 6. Build BookingDetail entities with price from breakdown
             foreach (var breakdown in priceResult.Breakdown)
             {
                 booking.BookingDetails.Add(new BookingDetail
@@ -94,10 +113,29 @@ namespace SportsBookingSystem.Application.Services
                 });
             }
 
-            // 6. Save with transaction + conflict check (handled in repository)
+            // 7. Save booking with conflict check (handled in repository)
             var createdBooking = await _bookingRepository.CreateAsync(booking);
 
-            // 7. Reload with includes for response mapping
+            // 8. Deduct wallet balance
+            user.WalletBalance -= priceResult.TotalPrice;
+            await _userRepository.UpdateAsync(user);
+
+            // 9. Record wallet transaction for the payment
+            var walletTransaction = new WalletTransaction
+            {
+                Id = Guid.NewGuid(),
+                UserId = dto.UserId,
+                Amount = -priceResult.TotalPrice,
+                Type = "BookingPayment",
+                ReferenceId = createdBooking.Id,
+                CreatedAt = DateTime.Now
+            };
+            await _walletTransactionRepository.CreateAsync(walletTransaction);
+
+            // 10. Update booking status to Confirmed after successful payment
+            await _bookingRepository.UpdateStatusAsync(createdBooking.Id, "Confirmed");
+
+            // 11. Reload with includes for response mapping
             var result = await _bookingRepository.GetByIdAsync(createdBooking.Id);
             return _mapper.Map<BookingDto>(result);
         }
@@ -127,6 +165,26 @@ namespace SportsBookingSystem.Application.Services
             if (booking.Status == "Cancelled")
             {
                 throw new InvalidOperationException("Booking is already cancelled.");
+            }
+
+            // Refund wallet balance to user
+            var user = await _userRepository.GetByIdAsync(booking.UserId);
+            if (user != null)
+            {
+                user.WalletBalance += booking.TotalPrice;
+                await _userRepository.UpdateAsync(user);
+
+                // Record refund wallet transaction
+                var walletTransaction = new WalletTransaction
+                {
+                    Id = Guid.NewGuid(),
+                    UserId = booking.UserId,
+                    Amount = booking.TotalPrice,
+                    Type = "BookingRefund",
+                    ReferenceId = booking.Id,
+                    CreatedAt = DateTime.Now
+                };
+                await _walletTransactionRepository.CreateAsync(walletTransaction);
             }
 
             await _bookingRepository.UpdateStatusAsync(id, "Cancelled");

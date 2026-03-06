@@ -245,6 +245,7 @@ namespace SportsBookingSystem.WebAPI.Controllers
 
                         await _walletRepo.CreateAsync(new WalletTransaction
                         {
+                            Id = Guid.NewGuid(),
                             UserId = user.Id,
                             Amount = pt.Amount,
                             Type = "Deposit",
@@ -291,6 +292,7 @@ namespace SportsBookingSystem.WebAPI.Controllers
                             // Tạm tạo 1 bản ghi PaymentTransactions để thoả mãn "luu luon ca lich su chuyen khoan vao PaymentTransactions"
                             var newPayment = new PaymentTransaction
                             {
+                                Id = Guid.NewGuid(),
                                 UserId = targetUserId, // Yêu cầu người dùng truyền đúng UserId lên OrderInfo
                                 Amount = exactAmount,
                                 PaymentGateway = "VNPAY",
@@ -306,6 +308,7 @@ namespace SportsBookingSystem.WebAPI.Controllers
                             // Lưu lịch sử ví (wallet transaction)
                              await _walletRepo.CreateAsync(new WalletTransaction
                             {
+                                Id = Guid.NewGuid(),
                                 UserId = targetUserId,
                                 Amount = exactAmount,
                                 Type = "Deposit",
@@ -341,6 +344,7 @@ namespace SportsBookingSystem.WebAPI.Controllers
 
                 var pt = new PaymentTransaction
                 {
+                    Id = Guid.NewGuid(),
                     UserId = userId,
                     Amount = (decimal)amount,
                     PaymentGateway = "VNPAY",

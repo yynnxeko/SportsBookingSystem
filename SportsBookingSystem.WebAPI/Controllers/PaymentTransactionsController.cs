@@ -30,6 +30,7 @@ namespace SportsBookingSystem.WebAPI.Controllers
 
             var payment = new PaymentTransaction
             {
+                Id = Guid.NewGuid(),
                 UserId = request.UserId,
                 Amount = request.Amount,
                 Status = "Pending",

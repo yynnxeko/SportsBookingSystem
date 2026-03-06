@@ -158,3 +158,4 @@ C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem
 C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.WebAPI\obj\Debug\net8.0\SportsBookingSystem.WebAPI.pdb
 C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.WebAPI\obj\Debug\net8.0\SportsBookingSystem.WebAPI.genruntimeconfig.cache
 C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.WebAPI\obj\Debug\net8.0\ref\SportsBookingSystem.WebAPI.dll
+C:\Users\BINH\Downloads\ki 7\swd\project\SportsBookingSystem\SportsBookingSystem.WebAPI\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

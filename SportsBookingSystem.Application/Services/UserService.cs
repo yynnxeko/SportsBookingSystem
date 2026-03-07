@@ -43,7 +43,7 @@ namespace SportsBookingSystem.Application.Services
                 FullName = user.FullName,
                 Email = user.Email,
                 PasswordHash = AuthHelper.HashPassword(user.PasswordHash),
-                Role = user.Role,
+                Role = "User",
                 WalletBalance = 0,
                 CreatedAt = DateTime.UtcNow
             };

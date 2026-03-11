@@ -1,7 +1,9 @@
 ﻿
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SportsBookingSystem.Application.DTOs.SportTypeDtos;
 using SportsBookingSystem.Application.Interfaces.IService;
+
 
 namespace SportsBookingSystem.WebAPI.Controllers
 {
@@ -17,6 +19,7 @@ namespace SportsBookingSystem.WebAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> CreateSportType([FromBody] SportTypeCreatedDto sportType)
         {
             try
@@ -52,6 +55,7 @@ namespace SportsBookingSystem.WebAPI.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> UpdateSportType(int id, [FromBody] SportTypeCreatedDto dto)
         {
             try
@@ -68,6 +72,7 @@ namespace SportsBookingSystem.WebAPI.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> DeleteSportType(int id)
         {
             try

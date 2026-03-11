@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SportsBookingSystem.Application.DTOs.TimeSlotDtos;
 using SportsBookingSystem.Application.Interfaces.IService;
@@ -36,6 +37,7 @@ namespace SportsBookingSystem.WebAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([FromBody] TimeSlotCreateDto dto)
         {
             try
@@ -50,6 +52,7 @@ namespace SportsBookingSystem.WebAPI.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int id)
         {
             try

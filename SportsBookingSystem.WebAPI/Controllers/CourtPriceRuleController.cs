@@ -1,3 +1,4 @@
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using SportsBookingSystem.Application.DTOs.CourtPriceRuleDtos;
 using SportsBookingSystem.Application.Interfaces.IService;
@@ -43,6 +44,7 @@ namespace SportsBookingSystem.WebAPI.Controllers
         }
 
         [HttpPost]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Create([FromBody] CourtPriceRuleCreateDto dto)
         {
             try
@@ -57,6 +59,7 @@ namespace SportsBookingSystem.WebAPI.Controllers
         }
 
         [HttpPut("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Update(Guid id, [FromBody] CourtPriceRuleUpdateDto dto)
         {
             try
@@ -75,6 +78,7 @@ namespace SportsBookingSystem.WebAPI.Controllers
         }
 
         [HttpDelete("{id}")]
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(Guid id)
         {
             try

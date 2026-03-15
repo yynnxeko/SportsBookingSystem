@@ -15,16 +15,22 @@ namespace SportsBookingSystem.Application.Services
     public class UserService : IUserService
     {
         private readonly IUserRepository _userRepository;
+        private readonly IWalletTransactionRepository _walletTransactionRepository;
         private readonly IMapper _mapper;
         private readonly IConfiguration _configuration;
-
-        public UserService(IUserRepository userRepository, IMapper mapper, IConfiguration configuration)
+        
+        public UserService(
+            IUserRepository userRepository, 
+            IWalletTransactionRepository walletTransactionRepository,
+            IMapper mapper,
+            IConfiguration configuration)
         {
             _userRepository = userRepository;
+            _walletTransactionRepository = walletTransactionRepository;
             _mapper = mapper;
             _configuration = configuration;
         }
-
+        
         public async Task<UserDto> CreateAsync(UserCreatedDto user)
         {
             var existingUser = await _userRepository.IsEmailExistedAsync(user.Email);
@@ -37,7 +43,7 @@ namespace SportsBookingSystem.Application.Services
                 FullName = user.FullName,
                 Email = user.Email,
                 PasswordHash = AuthHelper.HashPassword(user.PasswordHash),
-                Role = user.Role,
+                Role = "User",
                 WalletBalance = 0,
                 CreatedAt = DateTime.UtcNow
             };
@@ -59,6 +65,40 @@ namespace SportsBookingSystem.Application.Services
                 throw new Exception("User not found");
 
             return _mapper.Map<UserDto>(user);
+        }
+
+        public async Task<bool> UpdateWalletBalanceAsync(Guid userId, decimal amount, string transactionType, Guid? referenceId = null)
+        {
+            var user = await _userRepository.GetByIdAsync(userId);
+            if (user == null)
+            {
+                throw new Exception("User not found");
+            }
+
+            // Check if amount is negative, ensure they have sufficient balance
+            if (amount < 0 && user.WalletBalance + amount < 0)
+            {
+                throw new Exception("Insufficient wallet balance");
+            }
+
+            // Update user balance
+            user.WalletBalance += amount;
+            await _userRepository.UpdateAsync(user);
+
+            // Record transaction history
+            var transaction = new WalletTransaction
+            {
+                Id = Guid.NewGuid(),
+                UserId = userId,
+                Amount = amount,
+                Type = transactionType,
+                ReferenceId = referenceId,
+                CreatedAt = DateTime.UtcNow
+            };
+            
+            await _walletTransactionRepository.CreateAsync(transaction);
+
+            return true;
         }
 
         public async Task<string> LoginAsync(UserLoginDto loginDto)

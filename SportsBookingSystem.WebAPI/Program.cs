@@ -26,11 +26,13 @@ builder.Services.AddAutoMapper(typeof(SportTypeMappingProfile));
 builder.Services.AddAutoMapper(typeof(CourtMappingProfile));
 builder.Services.AddAutoMapper(typeof(CourtPriceRuleMappingProfile));
 builder.Services.AddAutoMapper(typeof(TimeSlotMappingProfile));
+builder.Services.AddAutoMapper(typeof(BookingMappingProfile));
 
 //Dependency Injection
 builder.Services.AddScoped<IUserRepository, UserRepository>();
 builder.Services.AddScoped<IUserService, UserService>();
 builder.Services.AddScoped<IPaymentTransactionRepository, PaymentTransactionRepository>();
+builder.Services.AddScoped<IWalletTransactionRepository, WalletTransactionRepository>();
 builder.Services.AddScoped<ISportTypeRepository, SportTypeRepository>();
 builder.Services.AddScoped<ISportTypeService, SportTypeService>();
 builder.Services.AddScoped<ICourtRepository, CourtRepository>();
@@ -40,6 +42,8 @@ builder.Services.AddScoped<ICourtPriceRuleService, CourtPriceRuleService>();
 builder.Services.AddScoped<ITimeSlotRepository, TimeSlotRepository>();
 builder.Services.AddScoped<ITimeSlotService, TimeSlotService>();
 builder.Services.AddScoped<IBookingPriceService, BookingPriceService>();
+builder.Services.AddScoped<IBookingRepository, BookingRepository>();
+builder.Services.AddScoped<IBookingService, BookingService>();
 
 // VnPay api
 builder.Services.AddSingleton<IVnpay, Vnpay>();

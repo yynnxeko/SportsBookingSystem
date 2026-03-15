@@ -64,5 +64,10 @@ namespace SportsBookingSystem.Infrastructure.Repositories
             _context.PaymentTransactions.Update(payment);
             await _context.SaveChangesAsync();
         }
+
+        public async Task<PaymentTransaction?> GetByTransactionCodeAsync(string transactionCode)
+        {
+            return await _context.PaymentTransactions.FirstOrDefaultAsync(p => p.TransactionCode == transactionCode);
+        }
     }
 }

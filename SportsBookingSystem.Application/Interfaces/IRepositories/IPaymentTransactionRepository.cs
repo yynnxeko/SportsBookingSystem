@@ -14,5 +14,6 @@ namespace SportsBookingSystem.Application.Interfaces.IRepositories
         Task<IEnumerable<PaymentTransaction>> GetAllPagedAsync(int page, int pageSize);
         Task<int> CountAllAsync();
         Task UpdateAsync(PaymentTransaction payment);
+        Task<PaymentTransaction?> GetByTransactionCodeAsync(string transactionCode);
     }
 }

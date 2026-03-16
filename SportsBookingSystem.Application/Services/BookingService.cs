@@ -1,5 +1,7 @@
 using AutoMapper;
 using SportsBookingSystem.Application.DTOs.BookingDtos;
+using SportsBookingSystem.Application.DTOs.CourtDtos;
+using SportsBookingSystem.Application.DTOs.TimeSlotDtos;
 using SportsBookingSystem.Application.Interfaces.IRepositories;
 using SportsBookingSystem.Application.Interfaces.IService;
 using SportsBookingSystem.Core.Models;
@@ -7,6 +9,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using static System.Runtime.InteropServices.JavaScript.JSType;
 
 namespace SportsBookingSystem.Application.Services
 {
@@ -52,17 +55,36 @@ namespace SportsBookingSystem.Application.Services
             }
 
             // 2. Validate TimeSlots exist
+            var timeSlots = await _timeSlotRepository.GetAllAsync();
+            var timeSlotDtos = _mapper.Map<List<TimeSlotDto>>(timeSlots);
+
+            var listTimeSlotAvailable = new List<SlotAvailabilityDto>();
+            var slotsBooked = await _courtRepository.GetBookedTimeSlotIdsAsync(court.Id, dto.BookingDate);
+            foreach (var slots in timeSlotDtos)
+            {
+                var isBooked = slotsBooked.Contains(slots.Id);
+                listTimeSlotAvailable.Add(new SlotAvailabilityDto
+                {
+                    TimeSlot = slots,
+                    IsAvailable = !isBooked
+                });
+
+            }
             if (dto.TimeSlotIds == null || dto.TimeSlotIds.Count == 0)
             {
                 throw new ArgumentException("At least one time slot must be selected.");
             }
 
-            foreach (var slotId in dto.TimeSlotIds)
+            foreach (var slots in listTimeSlotAvailable)
             {
-                var slot = await _timeSlotRepository.GetByIdAsync(slotId);
+                if(!slots.IsAvailable)
+                {
+                    throw new InvalidOperationException($"TimeSlot with ID {slots.TimeSlot.Id} is already booked for the selected date.");
+                }    
+                var slot = await _timeSlotRepository.GetByIdAsync(slots.TimeSlot.Id);
                 if (slot == null)
                 {
-                    throw new ArgumentException($"TimeSlot with ID {slotId} not found.");
+                    throw new ArgumentException($"TimeSlot with ID {slots.TimeSlot.Id} not found.");
                 }
             }
 

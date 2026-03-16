@@ -54,37 +54,26 @@ namespace SportsBookingSystem.Application.Services
                 throw new InvalidOperationException($"Court '{court.Name}' is not active.");
             }
 
-            // 2. Validate TimeSlots exist
-            var timeSlots = await _timeSlotRepository.GetAllAsync();
-            var timeSlotDtos = _mapper.Map<List<TimeSlotDto>>(timeSlots);
-
-            var listTimeSlotAvailable = new List<SlotAvailabilityDto>();
-            var slotsBooked = await _courtRepository.GetBookedTimeSlotIdsAsync(court.Id, dto.BookingDate);
-            foreach (var slots in timeSlotDtos)
-            {
-                var isBooked = slotsBooked.Contains(slots.Id);
-                listTimeSlotAvailable.Add(new SlotAvailabilityDto
-                {
-                    TimeSlot = slots,
-                    IsAvailable = !isBooked
-                });
-
-            }
+            // 2. Validate TimeSlots exist and available
             if (dto.TimeSlotIds == null || dto.TimeSlotIds.Count == 0)
             {
                 throw new ArgumentException("At least one time slot must be selected.");
             }
 
-            foreach (var slots in listTimeSlotAvailable)
+            var slotsBooked = await _courtRepository.GetBookedTimeSlotIdsAsync(court.Id, dto.BookingDate);
+            
+            foreach (var slotId in dto.TimeSlotIds)
             {
-                if(!slots.IsAvailable)
-                {
-                    throw new InvalidOperationException($"TimeSlot with ID {slots.TimeSlot.Id} is already booked for the selected date.");
-                }    
-                var slot = await _timeSlotRepository.GetByIdAsync(slots.TimeSlot.Id);
+                var slot = await _timeSlotRepository.GetByIdAsync(slotId);
                 if (slot == null)
                 {
-                    throw new ArgumentException($"TimeSlot with ID {slots.TimeSlot.Id} not found.");
+                    throw new ArgumentException($"TimeSlot with ID {slotId} not found.");
+                }
+
+                if (slotsBooked.Contains(slotId))
+                {
+                    throw new InvalidOperationException(
+                        $"TimeSlot {slot.StartTime:HH\\:mm}-{slot.EndTime:HH\\:mm} is already booked for the selected date.");
                 }
             }
 
